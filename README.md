@@ -13,3 +13,21 @@ function sumAll(arr) {
     return sum;
 }
 ```
+
+### diff two arrays
+```javascript
+function diffArray(arr1, arr2) {
+  const newArr = [];
+    for(item of arr1){
+        if(arr2.indexOf(item) < 0){
+            newArr.push(item);
+        }
+    }
+    for(item of arr2){
+        if(arr1.indexOf(item) < 0){
+            newArr.push(item);
+        }
+    }
+  return newArr;
+}
+```
